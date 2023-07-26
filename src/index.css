@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Pilcrow Rounded';
+    /* Sentient-Bold.otf */
+    src: url('/Sentient-Bold.otf') format('opentype');
+}
+
+.placeholder-animate:focus-within label,
+.placeholder-animate input:not(:placeholder-shown)+label {
+
+    @apply text-blue-900 top-[.6rem] bg-white px-[.2rem] font-semibold transition-all;
+}
+
+.placeholder-animate label {
+    transition: 200ms ease-in-out;
+}
+
+.avatar-title {
+    font-family: 'Pilcrow Rounded', sans-serif;
+}
+
+.avatar-aang {
+    min-width: 15rem;
+    background: url('../public/Avatar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @apply rounded-lg
+}
