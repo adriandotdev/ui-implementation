@@ -22,10 +22,42 @@
     font-family: 'Pilcrow Rounded', sans-serif;
 }
 
+.avatar-kyoshi {
+    min-width: 15rem;
+    background: url('../public/Kyoshi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @apply rounded-lg
+}
+
+.avatar-roku {
+    min-width: 15rem;
+    background: url('../public/Roku.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @apply rounded-lg
+}
+
 .avatar-aang {
     min-width: 15rem;
     background: url('../public/Avatar.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     @apply rounded-lg
+}
+
+.avatar-korra {
+    min-width: 15rem;
+    background: url('../public/Korra.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @apply rounded-lg
+}
+
+.avatar-scroll::-webkit-scrollbar {
+    width: 0;
+}
+
+.avatar-scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
